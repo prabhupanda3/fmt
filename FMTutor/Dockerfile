@@ -14,8 +14,6 @@ WORKDIR /my-java-fmt
 # Copy your Java application source code to the container
 COPY . /FMTutor
 
-# Build the application using Maven
-RUN mvn clean install
 
 # Expose the port that your application listens on
 EXPOSE 8081
