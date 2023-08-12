@@ -19,4 +19,4 @@ COPY . /FMTutor
 EXPOSE 8081
 
 # Command to run your Java application
-CMD ["java", "-jar", "target/maven/com.fmt/FMTutor.jar"]
+CMD ["java", "-jar", "target/maven/com/fmt/FMTutor.jar"]
