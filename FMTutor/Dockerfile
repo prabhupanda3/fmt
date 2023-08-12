@@ -13,7 +13,8 @@ WORKDIR /my-java-fmt
 
 # Copy your Java application source code to the container
 COPY . /FMTutor
-
+# Copy the built JAR from the build stage
+COPY --from=build /app/target/FMTutor.jar .
 
 # Expose the port that your application listens on
 EXPOSE 8081
